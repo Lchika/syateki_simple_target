@@ -24,6 +24,10 @@ public:
   void on_shoot(void (*func)(WebServer *web_server)) {
     if (_server == nullptr) return;
     _server->on("/", [this, func](){func(_server);});
+  }
+  void on_init(void (*func)(WebServer *web_server)) {
+    if (_server == nullptr) return;
+    _server->on("/init", [this, func](){func(_server);});
   };
   void begin(void) {
     if (_server == nullptr) return;
