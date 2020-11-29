@@ -24,8 +24,8 @@ struct Target
 static const IPAddress ip(192, 168, 100, 200);
 static const IPAddress gateway(192, 168, 100, 1);
 static const IPAddress subnet(255, 255, 255, 0);
-static const char *ssid = "ROBOCON-AP1";
-static const char *password = "20190216-rc";
+static const char *ssid = "your-ssid";
+static const char *password = "your-password";
 
 //Target targets[TARGET_NUM] {};
 std::vector<Target> targets;
